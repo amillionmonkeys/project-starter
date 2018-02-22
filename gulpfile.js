@@ -17,8 +17,6 @@ const svgStore = require("gulp-svgstore");
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
 
-const file = require("gulp-file");
-
 const del = require("del");
 const fractal = require("./fractal.js"); // import the Fractal instance configured in the fractal.js file
 
