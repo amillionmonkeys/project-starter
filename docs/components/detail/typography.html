@@ -375,174 +375,224 @@
 <span class="hljs-comment">//---------------------------------------------//</span>
 
 <span class="hljs-selector-tag">html</span> {
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">100%</span>;
 }
 
 <span class="hljs-selector-tag">body</span> {
-  <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family--primary</span>;
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size--base</span>;
-  <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$line-height--base</span>;
-  <span class="hljs-attribute">color</span>: color(neutral--dark);
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family--primary</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size--base</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$line-height--base</span>;
+    <span class="hljs-attribute">color</span>: color(neutral--dark);
 }
 
-<span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span>, <span class="hljs-selector-tag">h5</span>, <span class="hljs-selector-tag">h6</span>,
-<span class="hljs-selector-class">.h1</span>, <span class="hljs-selector-class">.h2</span>, <span class="hljs-selector-class">.h3</span>, <span class="hljs-selector-class">.h4</span>, <span class="hljs-selector-class">.h5</span>, <span class="hljs-selector-class">.h6</span>,
-%<span class="hljs-selector-tag">h1</span>, %<span class="hljs-selector-tag">h2</span>, %<span class="hljs-selector-tag">h3</span>, %<span class="hljs-selector-tag">h4</span>, %<span class="hljs-selector-tag">h5</span>, %<span class="hljs-selector-tag">h6</span> {
-  <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family--secondary</span>;
-  <span class="hljs-attribute">font-weight</span>: normal;
+<span class="hljs-selector-tag">h1</span>,
+<span class="hljs-selector-tag">h2</span>,
+<span class="hljs-selector-tag">h3</span>,
+<span class="hljs-selector-tag">h4</span>,
+<span class="hljs-selector-tag">h5</span>,
+<span class="hljs-selector-tag">h6</span>,
+<span class="hljs-selector-class">.h1</span>,
+<span class="hljs-selector-class">.h2</span>,
+<span class="hljs-selector-class">.h3</span>,
+<span class="hljs-selector-class">.h4</span>,
+<span class="hljs-selector-class">.h5</span>,
+<span class="hljs-selector-class">.h6</span>,
+%<span class="hljs-selector-tag">h1</span>,
+%<span class="hljs-selector-tag">h2</span>,
+%<span class="hljs-selector-tag">h3</span>,
+%<span class="hljs-selector-tag">h4</span>,
+%<span class="hljs-selector-tag">h5</span>,
+%<span class="hljs-selector-tag">h6</span> {
+    <span class="hljs-attribute">font-weight</span>: normal;
 }
 
+<span class="hljs-selector-tag">h1</span>,
+<span class="hljs-selector-class">.h1</span>,
+%<span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.953rem</span>;
+    @<span class="hljs-keyword">include</span> bp(l) {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.441rem</span>;
+    }
+}
+
+<span class="hljs-selector-tag">h2</span>,
+<span class="hljs-selector-class">.h2</span>,
+%<span class="hljs-selector-tag">h2</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.563rem</span>;
+    @<span class="hljs-keyword">include</span> bp(l) {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.953rem</span>;
+    }
+}
+
+<span class="hljs-selector-tag">h3</span>,
+<span class="hljs-selector-class">.h3</span>,
+%<span class="hljs-selector-tag">h3</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.563rem</span>;
+}
+
+<span class="hljs-selector-tag">h4</span>,
+<span class="hljs-selector-class">.h4</span>,
+%<span class="hljs-selector-tag">h4</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25rem</span>;
+}
+
+<span class="hljs-selector-tag">h5</span>,
+<span class="hljs-selector-class">.h5</span>,
+%<span class="hljs-selector-tag">h5</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
+}
 
 <span class="hljs-selector-tag">p</span> {
-  <span class="hljs-attribute">margin-bottom</span>: space(m);
+    <span class="hljs-attribute">margin-bottom</span>: space(m);
 }
 
 <span class="hljs-selector-class">.font-primary</span>,
 %<span class="hljs-attribute">font</span>-primary {
-  <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family--primary</span>;
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family--primary</span>;
 }
 
 <span class="hljs-selector-class">.font-secondary</span>,
 %<span class="hljs-attribute">font</span>-secondary {
-  <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family--secondary</span>;
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family--secondary</span>;
 }
 
 <span class="hljs-selector-class">.lead</span>,
 %lead {
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.125rem</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.125rem</span>;
 }
 
 <span class="hljs-selector-tag">small</span>,
 <span class="hljs-selector-class">.text-small</span>,
 %text-<span class="hljs-selector-tag">small</span> {
-  <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">75rem</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.75rem</span>;
 }
 
 <span class="hljs-selector-class">.text-muted</span> {
-  <span class="hljs-attribute">color</span>: color(neutral);
+    <span class="hljs-attribute">color</span>: color(neutral);
 }
 
 <span class="hljs-selector-class">.hyphenate</span>,
 %hyphenate {
-  <span class="hljs-attribute">overflow-wrap</span>: break-word;
-  <span class="hljs-attribute">word-wrap</span>: break-word;
-  <span class="hljs-attribute">hyphens</span>: auto;
+    <span class="hljs-attribute">overflow-wrap</span>: break-word;
+    <span class="hljs-attribute">word-wrap</span>: break-word;
+    <span class="hljs-attribute">hyphens</span>: auto;
 }
 
 <span class="hljs-selector-tag">strong</span> {
-  <span class="hljs-attribute">font-weight</span>: bold;
+    <span class="hljs-attribute">font-weight</span>: bold;
 }
 
 <span class="hljs-selector-tag">em</span>,
 <span class="hljs-selector-tag">cite</span>,
 <span class="hljs-selector-tag">dfn</span>,
 <span class="hljs-selector-tag">var</span> {
-  <span class="hljs-attribute">font-style</span>: italic;
+    <span class="hljs-attribute">font-style</span>: italic;
 }
 
 <span class="hljs-comment">// link styles</span>
 <span class="hljs-selector-tag">a</span> {
-  <span class="hljs-attribute">text-decoration</span>: none;
-  <span class="hljs-attribute">word-wrap</span>: break-word;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-link</span>;
+    <span class="hljs-attribute">text-decoration</span>: none;
+    <span class="hljs-attribute">word-wrap</span>: break-word;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-link</span>;
 }
 
 <span class="hljs-selector-tag">a</span>:hover {
-  <span class="hljs-attribute">text-decoration</span>: underline;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-link--hover</span>;
+    <span class="hljs-attribute">text-decoration</span>: underline;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-link--hover</span>;
 }
 
 <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">img</span> {
-  <span class="hljs-attribute">border</span>: none;
-  <span class="hljs-attribute">background</span>: none;
+    <span class="hljs-attribute">border</span>: none;
+    <span class="hljs-attribute">background</span>: none;
 }
 
 <span class="hljs-comment">// prevents border/background on linked image hover</span>
 <span class="hljs-selector-tag">a</span>:hover <span class="hljs-selector-tag">img</span> {
-  <span class="hljs-attribute">border</span>: none;
-  <span class="hljs-attribute">background</span>: none;
+    <span class="hljs-attribute">border</span>: none;
+    <span class="hljs-attribute">background</span>: none;
 }
 
 <span class="hljs-comment">// lines</span>
 <span class="hljs-selector-tag">hr</span> {
-  <span class="hljs-attribute">margin</span>: space(m) auto;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">border-top</span>: .<span class="hljs-number">0625rem</span> solid color(neutral);
-  <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">0</span> solid <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">margin</span>: space(m) auto;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">0.0625rem</span> solid color(neutral);
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">0</span> solid <span class="hljs-number">#fff</span>;
 }
 
 <span class="hljs-comment">// subscript &amp; superscript</span>
 <span class="hljs-selector-tag">sub</span>,
 <span class="hljs-selector-tag">sup</span> {
-  <span class="hljs-attribute">position</span>: relative;
-  <span class="hljs-attribute">margin-left</span>: .<span class="hljs-number">25rem</span>;
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">85%</span>;
-  <span class="hljs-attribute">font-weight</span>: bold;
-  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">vertical-align</span>: baseline;
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0.25rem</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">85%</span>;
+    <span class="hljs-attribute">font-weight</span>: bold;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">vertical-align</span>: baseline;
 }
 
 <span class="hljs-selector-tag">sup</span> {
-  <span class="hljs-attribute">top</span>: -.<span class="hljs-number">5rem</span>;
+    <span class="hljs-attribute">top</span>: -<span class="hljs-number">0.5rem</span>;
 }
 
 <span class="hljs-selector-tag">sub</span> {
-  <span class="hljs-attribute">bottom</span>: -.<span class="hljs-number">25rem</span>;
+    <span class="hljs-attribute">bottom</span>: -<span class="hljs-number">0.25rem</span>;
 }
 
 <span class="hljs-comment">// abbreviation or acronym</span>
 <span class="hljs-selector-tag">abbr</span><span class="hljs-selector-attr">[title]</span> {
-  <span class="hljs-attribute">border-bottom</span>: .<span class="hljs-number">0625rem</span> dotted color(neutral--dark);
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">0.0625rem</span> dotted color(neutral--dark);
 }
 
 <span class="hljs-comment">// mark element (highlight)</span>
 <span class="hljs-selector-tag">mark</span> {
-  <span class="hljs-attribute">background-color</span>: yellow;
-  <span class="hljs-attribute">color</span>: color(neutral--dark);
-  <span class="hljs-attribute">padding</span>: .<span class="hljs-number">25rem</span>;
+    <span class="hljs-attribute">background-color</span>: yellow;
+    <span class="hljs-attribute">color</span>: color(neutral--dark);
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.25rem</span>;
 }
 
 <span class="hljs-comment">// blockquote</span>
 <span class="hljs-selector-tag">blockquote</span> {
-  <span class="hljs-attribute">margin-bottom</span>: space(m);
-  <span class="hljs-attribute">padding-left</span>: space(m);
-  <span class="hljs-attribute">padding-right</span>: space(m);
-  <span class="hljs-attribute">border-left</span>: .<span class="hljs-number">25rem</span> solid color(neutral);
-  <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family--secondary</span>;
-  <span class="hljs-selector-tag">p</span>:last-of-type {
-    <span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">25rem</span>;
-  }
+    <span class="hljs-attribute">margin-bottom</span>: space(m);
+    <span class="hljs-attribute">padding-left</span>: space(m);
+    <span class="hljs-attribute">padding-right</span>: space(m);
+    <span class="hljs-attribute">border-left</span>: <span class="hljs-number">0.25rem</span> solid color(neutral);
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family--secondary</span>;
+    <span class="hljs-selector-tag">p</span>:last-of-type {
+        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0.25rem</span>;
+    }
 
-  <span class="hljs-selector-tag">cite</span> {
-    <span class="hljs-attribute">font-style</span>: italic;
-    @<span class="hljs-keyword">extend</span> %text-small;
-  }
+    <span class="hljs-selector-tag">cite</span> {
+        <span class="hljs-attribute">font-style</span>: italic;
+        @<span class="hljs-keyword">extend</span> %text-small;
+    }
 }
 
 <span class="hljs-comment">// figure and caption</span>
 <span class="hljs-selector-tag">figure</span> {
-  <span class="hljs-attribute">margin-bottom</span>: space(m);
+    <span class="hljs-attribute">margin-bottom</span>: space(m);
 }
 
 <span class="hljs-selector-tag">figcaption</span> {
-  <span class="hljs-attribute">padding-top</span>: .<span class="hljs-number">5rem</span>;
-  <span class="hljs-attribute">padding-bottom</span>: .<span class="hljs-number">5rem</span>;
-  <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family--secondary</span>;
-  <span class="hljs-attribute">font-size</span>: .<span class="hljs-number">875rem</span>;
-  <span class="hljs-attribute">text-align</span>: center;
-  <span class="hljs-attribute">border-bottom</span>: .<span class="hljs-number">0625rem</span> solid color(neutral--light);
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">0.5rem</span>;
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0.5rem</span>;
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$font-family--secondary</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.875rem</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">0.0625rem</span> solid color(neutral--light);
 }
 
 <span class="hljs-comment">// highlighting colors</span>
 ::selection {
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
-  <span class="hljs-attribute">background</span>: color(primary);
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">background</span>: color(primary);
 }
 
 <span class="hljs-selector-tag">code</span> {
-  <span class="hljs-attribute">background</span>: color(neutral--lightest);
-  <span class="hljs-attribute">padding</span>: space(s);
-}</pre>
+    <span class="hljs-attribute">background</span>: color(neutral--lightest);
+    <span class="hljs-attribute">padding</span>: space(s);
+}
+</pre>
                             </code>
                             
                         </div>
@@ -558,7 +608,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.7 KB</span>
+                    <span class="Meta-value">3.1 KB</span>
                 </li>
             </ul>
         </div>
