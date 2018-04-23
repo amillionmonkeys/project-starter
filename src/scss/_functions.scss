@@ -31,18 +31,22 @@
 
 $breakpoints-queries: ();
 
+@function em($pixels, $context) {
+    @return #{$pixels/$context}em;
+}
+
 @each $key, $pixels in $breakpoints {
     $screen-string: "only screen";
 
     @if ($pixels == "0") {
         $breakpoints-queries: map-merge(
             $breakpoints-queries,
-             ($key: "#{$screen-string}")
+            ($key: "#{$screen-string}")
         );
     } @else {
         $breakpoints-queries: map-merge(
             $breakpoints-queries,
-             ($key: "#{$screen-string} and (min-width: #{em($pixels, 16)})")
+            ($key: "#{$screen-string} and (min-width: #{em($pixels, 16)})")
         );
     }
 }
