@@ -16,6 +16,9 @@ const svgmin = require("gulp-svgmin");
 const svgStore = require("gulp-svgstore");
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
+var bower = require('gulp-bower');
+
+
 
 const del = require("del");
 const fractal = require("./fractal.js"); // import the Fractal instance configured in the fractal.js file
@@ -48,6 +51,10 @@ gulp.task("fractal:start", function() {
             `Fractal server is now running at ${server.urls.sync.local}`
         );
     });
+});
+
+gulp.task('bower', function() {
+    return bower({ directory: './src/bower_components' })
 });
 
 /*
@@ -105,7 +112,7 @@ gulp.task("css:watch", function() {
 
 gulp.task(
     "css",
-    gulp.series(gulp.parallel("css:clean", "css:lint"), "css:process")
+    gulp.series(gulp.parallel("css:clean"), "css:process")
 );
 
 /* Svg Icons */
